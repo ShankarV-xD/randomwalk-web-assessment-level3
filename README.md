@@ -93,7 +93,8 @@ The application should be able to accept the player names as input, and track ea
 
 ### Hosted Link
 
-[Tic Tac Toe](shankar-t3-randomwalk-round-2.vercel.app)
+[Tic Tac Toe](shankar-t3-randomwalk-round-2.vercel.app
+)
 
 ### Demo Video
 
