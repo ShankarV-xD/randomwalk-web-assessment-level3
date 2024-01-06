@@ -78,6 +78,9 @@ The application should be able to accept the player names as input, and track ea
 
 2) Ensure compatibility with major modern web browsers.
 
+
+
+
 **Deliverables:**
 
 1) HTML, CSS, and JavaScript files comprising the game and scorecard feature.
@@ -87,3 +90,7 @@ The application should be able to accept the player names as input, and track ea
 3) Source code with comments explaining the logic and structure for future reference or modifications. Zip it
 
 **Push the code in HTML, CSS and JS, along with a demo video of your solution into the github repo.**
+
+### Demo Video
+
+https://github.com/ShankarV-xD/randomwalk-web-assessment-level3/assets/134488402/12b856b3-a50d-437f-a530-7af71ad83687
