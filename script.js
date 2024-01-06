@@ -1,5 +1,9 @@
 //Storing references to DOM elements
 let gameTitle = document.querySelector(".title");
+// Added Dynamic Input Names
+let playerNames = document.querySelector(".players");
+let player1 = document.querySelector(".player-1");
+let player2 = document.querySelector(".player-2");
 let xScore = document.querySelector(".x-score");
 let oScore = document.querySelector(".o-score");
 let turnDisplay = document.querySelector(".turn");
@@ -25,14 +29,22 @@ let winningPattern = [
 let xTurn = true;
 let count = 0;
 
+//Variable declaration
+let player1Name = "";
+let player2Name = "";
+
 //Initial Scores
 let xCurrentScore = 0;
 let oCurrentScore = 0;
 
 //Update and Display the scores
 const updateScores = () => {
-  xScore.innerText = `X's Score: ${xCurrentScore}`;
-  oScore.innerText = `O's Score: ${oCurrentScore}`;
+  // Receiving value from the Input field
+  // If no Names are entered the default value apllies using OR ||
+  player1Name = `${player1.value}` || "Player X";
+  player2Name = `${player2.value}` || "Player O";
+  xScore.innerText = `${player1Name}'s Score: ${xCurrentScore}`;
+  oScore.innerText = `${player2Name}'s Score: ${oCurrentScore}`;
 };
 
 //Disable All Buttons
@@ -41,6 +53,7 @@ const disableButtons = () => {
   //disable title & scores
   //enable popup
   gameTitle.classList.add("hide");
+  playerNames.classList.add("hide");
   xScore.classList.add("hide");
   oScore.classList.add("hide");
   popupRef.classList.remove("hide");
@@ -55,6 +68,7 @@ const enableButtons = () => {
   //enable title & scores
   //disable popup
   gameTitle.classList.remove("hide");
+  playerNames.classList.remove("hide");
   xScore.classList.remove("hide");
   oScore.classList.remove("hide");
   popupRef.classList.add("hide");
@@ -63,11 +77,13 @@ const enableButtons = () => {
 //Function is executed when a player wins
 const winFunction = (letter) => {
   disableButtons();
+  player1Name = `${player1.value}` || "Player X";
+  player2Name = `${player2.value}` || "Player O";
   if (letter == "X") {
-    msgRef.innerHTML = "&#x1F3C6; <br> 'X' Wins";
+    msgRef.innerHTML = `&#x1F3C6; <br> '${player1Name}' Wins`;
     xCurrentScore += 1;
   } else {
-    msgRef.innerHTML = "&#x1F3C6; <br> 'O' Wins";
+    msgRef.innerHTML = `&#x1F3C6; <br> '${player2Name}' Wins`;
     oCurrentScore += 1;
   }
   updateScores();
@@ -132,9 +148,14 @@ btnRef.forEach((element) => {
       element.disabled = true;
     }
 
+    player1Name = `${player1.value}` || "Player X";
+    player2Name = `${player2.value}` || "Player O";
+
     //Turn indicator
     turnDisplay.classList.remove("hide");
-    turnDisplay.innerText = xTurn ? "X's Turn" : "O's Turn";
+    turnDisplay.innerText = xTurn
+      ? `${player1Name}'s Turn [X]`
+      : `${player2Name}'s Turn [O]`;
 
     //Increment count on each click
     count += 1;

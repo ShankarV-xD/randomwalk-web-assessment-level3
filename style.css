@@ -19,21 +19,37 @@ html {
   font-size: 3.5vmax;
 }
 
+.players {
+  padding: 2%;
+  text-align: left;
+  font-size: 2.5vmax;
+}
+
+.player-1 {
+  font-size: 1.5vmax;
+  width: 15%;
+}
+
+.player-2 {
+  font-size: 1.5vmax;
+  width: 15%;
+}
+
 .x-score {
   padding-left: 2%;
-  margin-top: 29%;
+  margin-top: 18%;
   text-align: left;
-  font-size: 3.5vmax;
+  font-size: 2.5vmax;
 }
 .o-score {
   padding-left: 2%;
   text-align: left;
-  font-size: 3.5vmax;
+  font-size: 2.5vmax;
 }
 
 .turn {
   text-align: center;
-  font-size: 3.5vmax;
+  font-size: 2.5vmax;
   margin-bottom: 1vmax;
 }
 
@@ -139,5 +155,9 @@ html {
 }
 
 .o-score.hide {
+  display: none;
+}
+
+.players.hide {
   display: none;
 }
