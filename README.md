@@ -91,6 +91,10 @@ The application should be able to accept the player names as input, and track ea
 
 **Push the code in HTML, CSS and JS, along with a demo video of your solution into the github repo.**
 
+### Hosted Link
+
+[Tic Tac Toe](shankar-t3-randomwalk-round-2.vercel.app)
+
 ### Demo Video
 
 https://github.com/ShankarV-xD/randomwalk-web-assessment-level3/assets/134488402/12b856b3-a50d-437f-a530-7af71ad83687
