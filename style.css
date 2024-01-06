@@ -1,0 +1,143 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Exo 2", sans-serif;
+}
+
+body {
+  height: 100vh;
+  background: linear-gradient(135deg, #f2efea, #f2e6c7);
+}
+
+html {
+  font-size: 16px;
+}
+
+.title {
+  text-align: center;
+  font-size: 3.5vmax;
+}
+
+.x-score {
+  padding-left: 2%;
+  margin-top: 29%;
+  text-align: left;
+  font-size: 3.5vmax;
+}
+.o-score {
+  padding-left: 2%;
+  text-align: left;
+  font-size: 3.5vmax;
+}
+
+.turn {
+  text-align: center;
+  font-size: 3.5vmax;
+  margin-bottom: 1vmax;
+}
+
+.wrapper {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+}
+
+.container {
+  width: 50vmin;
+  height: 50vmin;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2vmin;
+}
+
+.button-option {
+  background: #ffffff;
+  height: 15vmin;
+  width: 15vmin;
+  border: none;
+  border-radius: 8px;
+  font-size: 12vmin;
+  color: #525ceb;
+}
+
+.button-option:hover {
+  background-color: #ede2c5;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#restart {
+  font-size: 1.5vmax;
+  padding: 0.8vmax;
+  border-radius: 8px;
+  background-color: #0a0027;
+  color: #ffffff;
+  border: none;
+  position: relative;
+  left: 43%;
+  transform: translateX(-50%);
+  top: 50%;
+  margin: 1.5vmax;
+  display: block;
+  cursor: pointer;
+}
+
+.popup {
+  background: linear-gradient(135deg, #f2e6c7, #f2efea);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  display: flex;
+  z-index: 2;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1em;
+  font-size: 12vmin;
+}
+
+#new-game {
+  font-size: 0.6em;
+  padding: 0.5em 1em;
+  background-color: #0a0027;
+  color: #ffffff;
+  border-radius: 0.2em;
+  border: none;
+  cursor: pointer;
+}
+
+#message {
+  color: #76453b;
+  text-align: center;
+  font-size: 1em;
+}
+
+.name {
+  text-align: center;
+  font-size: larger;
+  position: absolute;
+  bottom: 1em;
+  width: 100%;
+  margin-bottom: 2%;
+}
+
+.title.hide {
+  display: none;
+}
+
+.popup.hide {
+  display: none;
+}
+
+.turn.hide {
+  display: none;
+}
+
+.x-score.hide {
+  display: none;
+}
+
+.o-score.hide {
+  display: none;
+}
